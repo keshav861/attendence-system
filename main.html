@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
+</head>
+
+<body style="background-color: lightorange;">
+    <table id="inputTable">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Present <input type="radio" name="markAll" value="Present" onclick="markAll('Present')"></th>
+                <th>Absent <input type="radio" name="markAll" value="Absent" onclick="markAll('Absent')"></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <button onclick="saveData()">Save</button>
+    <input type="file" id="uploadExcel" onchange="handleExcelUpload(event)">
+    <h3>Uploaded Excel Data:</h3>
+    <table id="excelDataDisplay">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
